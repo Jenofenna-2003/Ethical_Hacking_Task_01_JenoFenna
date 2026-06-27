@@ -1,11 +1,11 @@
-Ethical Hacking Task 01
+## Ethical Hacking Task 01
 Information Gathering & Reconnaissance
 
-Objective
+## Objective
 ---------
 The objective of this task is to understand the reconnaissance phase of ethical hacking by collecting publicly available information about a target website using passive information gathering techniques.
 
-Target Selection
+## Target Selection
 ----------------
 Website Name : Amazon
 Website URL  :https://www.amazon.com/ 
@@ -14,7 +14,7 @@ Reason:
 - Safe for passive reconnaissance
 - Used for educational purposes only
 
-Tools Used
+## Tools Used
 ----------
 1. Kali Linux
 2. whois
@@ -24,7 +24,7 @@ Tools Used
 6. curl
 7. OpenSSL
 
-Commands Used
+## Commands Used
 -------------
 
 1. WHOIS Lookup
@@ -75,7 +75,7 @@ echo | openssl s_client -connect example.com:443 | openssl x509 -noout -dates -i
 Purpose:
 Displays SSL certificate issuer, validity period, and subject details.
 
-Information Collected
+## Information Collected
 ---------------------
 - Domain Name
 - Registrar
@@ -87,10 +87,10 @@ Information Collected
 - HTTP Headers
 - SSL Certificate Details
 
-Observation
+## Observation
 -----------
 Passive reconnaissance provides useful information about a publicly accessible website without interacting directly with its internal systems or attempting exploitation.
 
-Conclusion
+## Conclusion
 ----------
 This exercise demonstrated the importance of information gathering during the initial phase of a penetration test. Using standard Kali Linux tools, publicly available information about a domain can be collected safely and ethically.
