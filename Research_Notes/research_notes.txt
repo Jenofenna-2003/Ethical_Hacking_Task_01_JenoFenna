@@ -1,25 +1,21 @@
-# Ethical Hacking Task 01
+ Ethical Hacking Task 01
+Information Gathering & Reconnaissance
 
-## Information Gathering & Reconnaissance
-
-## Objective
-
+ Objective
+---------
 The objective of this task is to understand the reconnaissance phase of ethical hacking by collecting publicly available information about a target website using passive information gathering techniques.
 
-## Target Selection
+ Target Selection
+----------------
+Website Name : Amazon
+Website URL  :https://www.amazon.com/ 
+Reason:
+- Publicly accessible website
+- Safe for passive reconnaissance
+- Used for educational purposes only
 
-**Website Name:** Amazon
-
-**Website URL:** https://www.amazon.com/
-
-**Reason:**
-
-* Publicly accessible website
-* Safe for passive reconnaissance
-* Used for educational purposes only
-
-## Tools Used
-
+ Tools Used
+----------
 1. Kali Linux
 2. whois
 3. dig
@@ -28,97 +24,73 @@ The objective of this task is to understand the reconnaissance phase of ethical 
 6. curl
 7. OpenSSL
 
-## Commands Used
+ Commands Used
+-------------
 
-### 1. WHOIS Lookup
+1. WHOIS Lookup
+whois example.com
 
-```bash
-whois amazon.com
-```
-
-**Purpose:**
+Purpose:
 Displays domain registration information such as registrar, creation date, expiry date, name servers, and domain status.
 
-### 2. DNS Lookup
+2. DNS Lookup
+dig example.com
 
-```bash
-dig amazon.com
-```
-
-**Purpose:**
+Purpose:
 Retrieves DNS records for the target domain.
 
-### 3. Name Server Lookup
+3. Name Server Lookup
+dig NS example.com
 
-```bash
-dig NS amazon.com
-```
-
-**Purpose:**
+Purpose:
 Displays the authoritative name servers of the domain.
 
-### 4. Mail Server Lookup
+4. Mail Server Lookup
+dig MX example.com
 
-```bash
-dig MX amazon.com
-```
-
-**Purpose:**
+Purpose:
 Finds the mail exchange servers used by the domain.
 
-### 5. Host Lookup
+5. Host Lookup
+host example.com
 
-```bash
-host amazon.com
-```
-
-**Purpose:**
+Purpose:
 Resolves the domain name to its IP address and displays DNS information.
 
-### 6. IP Address Lookup
+6. IP Address Lookup
+nslookup example.com
 
-```bash
-nslookup amazon.com
-```
-
-**Purpose:**
+Purpose:
 Finds the IP address associated with the domain.
 
-### 7. HTTP Header Information
+7. HTTP Header Information
+curl -I https://example.com
 
-```bash
-curl -I https://www.amazon.com
-```
-
-**Purpose:**
+Purpose:
 Retrieves HTTP response headers from the web server.
 
-### 8. SSL Certificate Information
+8. SSL Certificate Information
+echo | openssl s_client -connect example.com:443 | openssl x509 -noout -dates -issuer -subject
 
-```bash
-echo | openssl s_client -connect amazon.com:443 | openssl x509 -noout -dates -issuer -subject
-```
-
-**Purpose:**
+Purpose:
 Displays SSL certificate issuer, validity period, and subject details.
 
-## Information Collected
+ Information Collected
+---------------------
+- Domain Name
+- Registrar
+- Registration Date
+- Expiry Date
+- Name Servers
+- Domain Status
+- IP Address
+- HTTP Headers
+- SSL Certificate Details
 
-* Domain Name
-* Registrar
-* Registration Date
-* Expiry Date
-* Name Servers
-* Domain Status
-* IP Address
-* HTTP Headers
-* SSL Certificate Details
-
-## Observation
-
+ Observation
+-----------
 Passive reconnaissance provides useful information about a publicly accessible website without interacting directly with its internal systems or attempting exploitation.
 
-## Conclusion
-
-This exercise demonstrated the importance of information gathering during the initial phase of a penetration test. Using standard Kali Linux tools, publicly available information about a domain can be collected safely and ethically.
-available information about a domain can be collected safely and ethically.
+ Conclusion
+----------
+This exercise demonstrated the importance of information gathering during the initial phase of a penetration test. Using standard Kali Linux tools, publicly available information about a domain can be collected safely and ethically.                                       
