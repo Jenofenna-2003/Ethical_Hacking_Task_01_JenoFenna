@@ -53,5 +53,4 @@ This project was completed strictly for educational purposes. Only publicly avai
 
 ### Author
 
-Name: Jenofenna Maria
-Project: Ethical Hacking Internship - Task 01
+### Name: Jenofenna Maria
