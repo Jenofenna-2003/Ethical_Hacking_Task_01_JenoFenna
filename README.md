@@ -35,8 +35,6 @@ Screenshots
 ### Screenshots
 ![](Screenshots/WHOIS.jpeg)
 ![](Screenshots/DNS_Records.jpeg)
-![](Screenshots/host.jpeg)
-![](Screenshots/curl_headers.jpeg)
 
 ### Learning Outcomes
 
